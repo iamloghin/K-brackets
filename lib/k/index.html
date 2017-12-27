@@ -1,0 +1,73 @@
+<!doctype html>
+
+<title>CodeMirror: K mode</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../../doc/docs.css">
+
+<link rel="stylesheet" href="../../lib/codemirror.css">
+<script src="../../lib/codemirror.js"></script>
+<script src="k.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+<div id=nav>
+    <a href="http://codemirror.net"><h1>CodeMirror</h1><img id=logo src="../../doc/logo.png"></a>
+
+    <ul>
+        <li><a href="../../index.html">Home</a>
+        <li><a href="../../doc/manual.html">Manual</a>
+        <li><a href="https://github.com/codemirror/codemirror">Code</a>
+    </ul>
+    <ul>
+        <li><a href="../index.html">Language modes</a>
+        <li><a class=active href="#">K</a>
+    </ul>
+</div>
+
+<article>
+    <h2>K mode</h2>
+    <form>
+        <textarea id="code" name="code">
+            module CALCULATOR-SYNTAX
+
+            syntax Expressions ::= Int
+            | "(" Expressions ")"                   [bracket]
+            > left:
+            Expressions "*" Expressions           [left, strict]
+            | Expressions "/" Expressions           [left, strict]
+            | Expressions "%" Expressions           [left, strict]
+            > left:
+            Expressions "+" Expressions           [left, strict]
+            | Expressions "-" Expressions           [left, strict]
+
+            endmodule
+
+            module CALCULATOR
+
+            imports CALCULATOR-SYNTAX
+
+            syntax KResult ::= Int
+
+            configuration <k> $PGM:Expressions </k>
+
+            // math rules
+            rule I1:Int + I2:Int => I1 +Int I2
+            rule I1:Int - I2:Int => I1 -Int I2 
+            rule I1:Int * I2:Int => I1 *Int I2 
+            rule I1:Int / I2:Int => I1 /Int I2 when I2 =/=Int 0
+            rule I1:Int % I2:Int => I1 %Int I2 when I2 =/=Int 0
+
+            endmodule 
+        </textarea>
+    </form>
+
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+            lineNumbers: true,
+            mode: {name: "K"},
+        });
+    </script>
+
+    <p></p>
+    <p>K CodeMirror mode developed by <a href="https://github.com/logalex96" target="_blank">Loghin L. Alexandru</a>.</p>
+    <p><strong>MIME types defined:</strong> <code>text/x-k</code></p>
+
+</article>
