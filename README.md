@@ -15,8 +15,11 @@ K framework is an open source project and you can view the source code here: htt
 ## Syntax Highlighter Example
 
 ![highlight](https://raw.githubusercontent.com/logalex96/K-brackets/master/imgs/demo1.JPG)
+### Using custom "start": <br>
 ![start](https://raw.githubusercontent.com/logalex96/K-brackets/master/imgs/sDemo1.gif)
+### Using custom "tag": <br>
 ![tag](https://raw.githubusercontent.com/logalex96/K-brackets/master/imgs/sDemo2.gif)
+### Using custom "syntax": <br>
 ![syntax](https://raw.githubusercontent.com/logalex96/K-brackets/master/imgs/sDemo3.gif)
 
 ## Install
@@ -51,13 +54,13 @@ The extension has not yet implemented its own template system, but we advise you
 
 ## K syntax highlighting
 ```
-Strings:	' ' ,
+Strings:' ' ,
             " "
 
-Comments:	// ,
+Comments:// ,
             /* */
 
-Keywords:	module,
+Keywords:module,
             endmodule,
             syntax,
             rule,
@@ -75,7 +78,7 @@ Keywords:	module,
             Kresult,
             context
 
-Tags:		strict,
+Tags:	strict,
             avoid,
             prefer,
             bracket,
@@ -92,18 +95,18 @@ Tags:		strict,
             non-assoc,
             stream
 
-Operators:	::=,
+Operators:::=,
             [+ - * % / > <],
             !(\S),
             [=> <= <-| |->]
 
-Types:		[: + % * - > < =](\S)
+Types:	[: + % * - > < =](\S)
             Ex: +Int, =/=Int...
 
-Brackets:	[],
+Brackets:[],
             {}
 
-Kextra:		... ,
+Kextra:	... ,
             . ,
             _
 ```
