@@ -58,7 +58,6 @@ The extension has not yet implemented its own template system, but we advise you
 
 ## K syntax highlighting
 ```
-<<<<<<< HEAD
 Strings:	' ' ,
             " "
 
@@ -66,15 +65,6 @@ Comments:	// ,
             /* */
 
 Keywords:	module,
-=======
-Strings:    ' ' ,
-            " "
-
-Comments:   // ,
-            /* */
-
-Keywords:   module,
->>>>>>> 3acc6f0a90244eb3c4f2832e41f89f20ffac0b48
             endmodule,
             syntax,
             rule,
@@ -92,11 +82,7 @@ Keywords:   module,
             Kresult,
             context
 
-<<<<<<< HEAD
 Tags:		strict,
-=======
-Tags:       strict,
->>>>>>> 3acc6f0a90244eb3c4f2832e41f89f20ffac0b48
             avoid,
             prefer,
             bracket,
@@ -113,16 +99,11 @@ Tags:       strict,
             non-assoc,
             stream
 
-<<<<<<< HEAD
 Operators:	::=,
-=======
-Operators:  ::=,
->>>>>>> 3acc6f0a90244eb3c4f2832e41f89f20ffac0b48
             [+ - * % / > <],
             !(\S),
             [=> <= <-| |->]
 
-<<<<<<< HEAD
 Types:		[: + % * - > < =](\S)
             Ex: +Int, =/=Int...
 
@@ -130,15 +111,6 @@ Brackets:	[],
             {}
 
 Kextra:		... ,
-=======
-Types:      [: + % * - > < =](\S)
-            Ex: +Int, =/=Int...
-
-Brackets:   [],
-            {}
-
-Kextra:     ... ,
->>>>>>> 3acc6f0a90244eb3c4f2832e41f89f20ffac0b48
             . ,
             _
 ```
