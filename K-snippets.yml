@@ -1,28 +1,28 @@
 - trigger: module
   scope: k
   description: simple module (K)
-  mTime: 1516179523836
+  mTime: 1516193657005
   text: |
         module ${1:NAME}
-        
+            ${2}
         endmodule
 
 - trigger: moduleS
   description: module SYNTAX (K)
   scope: k
-  mTime: 1516179558779
+  mTime: 1516193649430
   text: |
         module ${1:NAME}-SYNTAX
-        
+            ${2}
         endmodule
 
 - trigger: start
   description: basic skeleton (K)
   scope: k
-  mTime: 1516185078791
+  mTime: 1516193630248
   text: |
         module ${1:NAME}-SYNTAX
-        
+            ${2}
         
         
         endmodule
@@ -71,4 +71,60 @@
   mTime: 1516180587942
   text: |
         <${1:tag}>${2:NAME}</${1:tag}>
+
+- trigger: rule
+  description: rule (K)
+  scope: k
+  mTime: 1516193616344
+  text: |
+        rule ${1:NAME} => ${2}
+
+- trigger: k
+  description: k tag (K)
+  scope: k
+  mTime: 1516193713964
+  text: |
+        <k>${1}</k>
+
+- trigger: env
+  description: env tag (K)
+  scope: k
+  mTime: 1516193748791
+  text: |
+        <env>${1}</env>
+
+- trigger: stream
+  description: stream stdin/stdout (K)
+  scope: k
+  mTime: 1516193829637
+  text: |
+        stream="std${1:in/out}"${2}
+
+- trigger: stack
+  description: stack tag (K)
+  scope: k
+  mTime: 1516193889638
+  text: |
+        <stack>${1}</stack>
+
+- trigger: assignment
+  description: "assignment |-> (K)"
+  scope: k
+  mTime: 1516194312018
+  text: |
+        ${1} |-> ${2}
+
+- trigger: remove
+  description: Send to trash (K)
+  scope: k
+  mTime: 1516194044083
+  text: |
+        => .${1:)}${2}
+
+- trigger: assignment2
+  description: "assignment => (K)"
+  scope: k
+  mTime: 1516194289611
+  text: |
+        ${1} => ${2}
 
