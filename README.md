@@ -100,7 +100,7 @@ Operators:  ::=,
             !(\S),
             [=> <= <-| |->]
 
-Types:	[: + % * - > < =](\S)
+Types:      [: + % * - > < =](\S)
             Ex: +Int, =/=Int...
 
 Brackets:   [],
