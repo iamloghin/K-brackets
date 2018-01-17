@@ -3,7 +3,7 @@
     "title": "K Framework Syntax Highlighter",
     "description": "Brings support for K Framework from CodeMirror to Brackets.",
     "homepage": "https://github.com/logalex96/K-brackets",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "author": "Loghin L. Alexandru",
     "repository": {
         "type": "git",
