@@ -78,7 +78,7 @@ Keywords:   module,
             Kresult,
             context
 
-Tags:	strict,
+Tags:       strict,
             avoid,
             prefer,
             bracket,
