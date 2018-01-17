@@ -1,0 +1,74 @@
+- trigger: module
+  scope: k
+  description: simple module (K)
+  mTime: 1516179523836
+  text: |
+        module ${1:NAME}
+        
+        endmodule
+
+- trigger: moduleS
+  description: module SYNTAX (K)
+  scope: k
+  mTime: 1516179558779
+  text: |
+        module ${1:NAME}-SYNTAX
+        
+        endmodule
+
+- trigger: start
+  description: basic skeleton (K)
+  scope: k
+  mTime: 1516180279399
+  text: |
+        module ${1:NAME}-SYNTAX \r
+        \r
+         \r
+         \r
+        endmodule\r
+         \r
+        module ${1:NAME} \r
+        imports ${1:NAME}-SYNTAX\r
+         \r
+         \r
+         \r
+         \r
+        endmodule
+
+- trigger: imports
+  description: module imports (K)
+  scope: k
+  mTime: 1516179851291
+  text: |
+        imports ${1:NAME}-SYNTAX
+
+- trigger: syntax
+  description: define syntax (K)
+  scope: k
+  mTime: 1516180358591
+  text: |
+        syntax ${1:NAME} ::= ${2:PARAM}
+
+- trigger: configuration
+  description: basic configuration (K)
+  scope: k
+  mTime: 1516180241024
+  text: |
+        configuration <T>
+                    ${1}
+                    </T>
+
+- trigger: List
+  description: basic list (K)
+  scope: k
+  mTime: 1516180464807
+  text: |
+        List{${1:NAME},${2}}${3}
+
+- trigger: tag
+  description: basic tag (K)
+  scope: k
+  mTime: 1516180587942
+  text: |
+        <${1:tag}>${2:NAME}</${1:tag}>
+
