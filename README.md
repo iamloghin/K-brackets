@@ -15,8 +15,11 @@ K framework is an open source project and you can view the source code here: htt
 ## Syntax Highlighter Example
 
 ![highlight](https://raw.githubusercontent.com/logalex96/K-brackets/master/imgs/demo1.JPG)
+### Using custom "start" : <br>
 ![start](https://raw.githubusercontent.com/logalex96/K-brackets/master/imgs/sDemo1.gif)
+### Using custom "tag" : <br>
 ![tag](https://raw.githubusercontent.com/logalex96/K-brackets/master/imgs/sDemo2.gif)
+### Using custom "syntax" : <br>
 ![syntax](https://raw.githubusercontent.com/logalex96/K-brackets/master/imgs/sDemo3.gif)
 
 ## Install
