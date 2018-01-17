@@ -58,13 +58,13 @@ The extension has not yet implemented its own template system, but we advise you
 
 ## K syntax highlighting
 ```
-Strings:	' ' ,
+Strings:    ' ' ,
             " "
 
-Comments:	// ,
+Comments:   // ,
             /* */
 
-Keywords:	module,
+Keywords:   module,
             endmodule,
             syntax,
             rule,
@@ -82,7 +82,7 @@ Keywords:	module,
             Kresult,
             context
 
-Tags:		strict,
+Tags:       strict,
             avoid,
             prefer,
             bracket,
@@ -99,18 +99,18 @@ Tags:		strict,
             non-assoc,
             stream
 
-Operators:	::=,
+Operators:  ::=,
             [+ - * % / > <],
             !(\S),
             [=> <= <-| |->]
 
-Types:		[: + % * - > < =](\S)
+Types:      [: + % * - > < =](\S)
             Ex: +Int, =/=Int...
 
-Brackets:	[],
+Brackets:   [],
             {}
 
-Kextra:		... ,
+Kextra:     ... ,
             . ,
             _
 ```
