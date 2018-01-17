@@ -19,20 +19,20 @@
 - trigger: start
   description: basic skeleton (K)
   scope: k
-  mTime: 1516180279399
+  mTime: 1516185078791
   text: |
-        module ${1:NAME}-SYNTAX \r
-        \r
-         \r
-         \r
-        endmodule\r
-         \r
-        module ${1:NAME} \r
-        imports ${1:NAME}-SYNTAX\r
-         \r
-         \r
-         \r
-         \r
+        module ${1:NAME}-SYNTAX
+        
+        
+        
+        endmodule
+        
+        module ${1:NAME}
+        imports ${1:NAME}-SYNTAX
+        
+        
+        
+        
         endmodule
 
 - trigger: imports
@@ -52,16 +52,16 @@
 - trigger: configuration
   description: basic configuration (K)
   scope: k
-  mTime: 1516180241024
+  mTime: 1516185088541
   text: |
         configuration <T>
                     ${1}
                     </T>
 
-- trigger: List
+- trigger: list
   description: basic list (K)
   scope: k
-  mTime: 1516180464807
+  mTime: 1516184757338
   text: |
         List{${1:NAME},${2}}${3}
 
